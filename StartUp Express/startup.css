@@ -1,0 +1,72 @@
+body {
+    background-color: rgb(2, 71, 42);
+}
+
+.image {
+    float: left;
+    width: 1250px;
+    height: 1245px;
+    margin-right: 50px;
+}
+
+.icon {
+    width: 35px;
+    margin-top: 25px;
+}
+
+.head {
+    float: right;
+    margin-top: 25px;
+}
+
+h3, h1, button {
+    color: white;
+}
+
+h3 {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    float: right;
+    margin-top: -37px;
+    margin-right: 990px;
+}
+
+h1 {
+    font-size: 100px;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.start {
+    color: burlywood;
+}
+
+.features, .launch {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Brush Script MT', cursive;
+    background-color: rgb(0, 255, 170);
+    width: 350px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    border-color: rgb(0, 255, 170);
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.launch:hover {
+    background-color: white;
+    border-color: white;
+    color: rgb(0, 255, 170);
+}
+
+.contacts {
+    width: 35px;
+    margin-right: 10px;
+}
+
+p {
+    color: white;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 40px;
+}
