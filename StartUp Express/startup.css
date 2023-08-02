@@ -2,6 +2,24 @@ body {
     background-color: rgb(2, 71, 42);
 }
 
+.head {
+    background-color: lawngreen;
+    border-color: lawngreen;
+    border-radius: 50px;
+    width: 100px;
+    height: 25px;
+    cursor: pointer;
+    margin-right: 30px;
+    font-size: 12px;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.head:hover {
+    background-color: white;
+    border-color: white;
+    color: lawngreen;
+}
+
 .image {
     float: left;
     width: 1250px;
@@ -27,7 +45,7 @@ h3 {
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
     float: right;
-    margin-top: -37px;
+    margin-top: -38px;
     margin-right: 990px;
 }
 
@@ -37,19 +55,19 @@ h1 {
 }
 
 .start {
-    color: burlywood;
+    color: rgb(250, 209, 155);
 }
 
 .features, .launch {
     font-size: 25px;
     font-weight: 500;
     font-family: 'Brush Script MT', cursive;
-    background-color: rgb(0, 255, 170);
+    background-color: lawngreen;
     width: 350px;
     height: 50px;
     text-align: center;
     border-radius: 50px;
-    border-color: rgb(0, 255, 170);
+    border-color: lawngreen;
     cursor: pointer;
     margin-bottom: 50px;
 }
@@ -57,7 +75,7 @@ h1 {
 .launch:hover {
     background-color: white;
     border-color: white;
-    color: rgb(0, 255, 170);
+    color: lawngreen;
 }
 
 .contacts {
@@ -69,4 +87,44 @@ p {
     color: white;
     font-family: 'Brush Script MT', cursive;
     font-size: 40px;
+}
+
+p:hover {
+    color: rgb(250, 209, 155);
+}
+
+@media only screen and (max-width: 850px) {
+    .image {
+        width: 375px;
+        height: 500px;
+    }
+
+    .nav {
+        margin-right: 30px;
+    }
+
+    #intro {
+        margin-right: 95px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .icon {
+        margin-top: 25px;
+    }
+
+    .launch {
+        font-size: 15px;
+        width: 250px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .contacts {
+        width: 20px;
+    }
 }
