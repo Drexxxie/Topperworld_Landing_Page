@@ -6,6 +6,15 @@ img {
     float: left;
 }
 
+.image {
+    float: left;
+    width: 1250px;
+    height: 1245px;
+    margin-right: 50px;
+    margin-top: -60px;
+}
+
+
 h1 {
     color: rgb(250, 209, 155);
     font-family: 'Brush Script MT', cursive;
