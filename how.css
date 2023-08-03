@@ -12,6 +12,15 @@ h1 {
     font-size: 100px;
 }
 
+.image {
+    float: left;
+    width: 1250px;
+    height: 1245px;
+    margin-right: 50px;
+    margin-top: -60px;
+}
+
+
 .line {
     background-color: lawngreen;
     width: 150px;
@@ -24,7 +33,7 @@ p {
     color: white;
     word-wrap: break-word;
     font-family: 'Brush Script MT', cursive;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .next1 {

@@ -12,6 +12,15 @@ h1 {
     font-size: 100px;
 }
 
+.image {
+    float: left;
+    width: 1250px;
+    height: 1245px;
+    margin-right: 50px;
+    margin-top: -60px;
+}
+
+
 .line {
     background-color: lawngreen;
     width: 150px;
