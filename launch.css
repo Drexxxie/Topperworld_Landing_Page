@@ -26,3 +26,9 @@ h3 {
     text-align: center;
     margin: 50px auto;
 }
+
+h1 {
+    color: white;
+    font-size: 100px;
+    font-family: 'Brush Script MT', cursive;
+}
