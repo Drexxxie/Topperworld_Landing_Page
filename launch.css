@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(2, 71, 42);
+}
+
+.icon {
+    width: 35px;
+}
+
+header {
+    width: 0px;
+}
+
+h3 {
+    color: white;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 40px;
+    margin-top: -38px;
+}
+
+.box {
+    background-color: rgba(250, 209, 155, 0.7);;
+    border-radius: 15%;
+    width: 1000px;
+    height: 1000px;
+    text-align: center;
+    margin: 50px auto;
+}
