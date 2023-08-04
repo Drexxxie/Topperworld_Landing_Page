@@ -26,3 +26,34 @@ img {
     flex: 50%;
     margin-left: 2rem;
 }
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 4rem;
+    margin: 0.5rem auto;
+}
+
+.line {
+    background-color: lawngreen;
+    height: 0.2rem;
+    width: 5rem;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.next1, .next2 {
+    background-color: lawngreen;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.8rem;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+}
+
+.next1:hover, .next2:hover {
+    background-color: white;
+    color: lawngreen;
+}
