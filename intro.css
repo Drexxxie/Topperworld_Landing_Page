@@ -71,7 +71,8 @@ p {
 
     .item2 {
         flex: 50%;
-        margin-left: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
     
 }
