@@ -2,33 +2,23 @@ body {
     background-color: rgb(2, 71, 42);
 }
 
-.icon {
-    width: 35px;
+* {
+    box-sizing: border-box;
+    font-family: 'Calibre', sans-serif;
+    color: #fff;
+  }
+
+.container {
+    display: flex;
+    flex-direction: row;
 }
 
-header {
-    width: 0px;
+
+.item1 {
+    flex: 50%;
 }
 
-h3 {
-    color: white;
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-    margin-left: 40px;
-    margin-top: -38px;
-}
-
-.box {
-    background-color: rgba(250, 209, 155, 0.7);;
-    border-radius: 15%;
-    width: 1000px;
-    height: 1000px;
-    text-align: center;
-    margin: 50px auto;
-}
-
-h1 {
-    color: white;
-    font-size: 100px;
-    font-family: 'Brush Script MT', cursive;
+.item2 {
+    flex: 50%;
+    margin-left: 2rem;
 }

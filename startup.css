@@ -35,10 +35,10 @@ h1 {
 
 button {
     background-color: lawngreen;
-    padding: 0.8rem;
+    padding: none;
     border:none;
     border-radius: 2rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: bolder;
 }
 

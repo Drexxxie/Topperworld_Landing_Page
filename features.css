@@ -2,84 +2,23 @@ body {
     background-color: rgb(2, 71, 42);
 }
 
-img {
-    float: left;
-}
+* {
+    box-sizing: border-box;
+    font-family: 'Calibre', sans-serif;
+    color: #fff;
+  }
 
-h1 {
-    color: rgb(250, 209, 155);
-    font-family: 'Brush Script MT', cursive;
-    font-size: 100px;
-}
-
-.image {
-    float: left;
-    width: 1250px;
-    height: 1245px;
-    margin-right: 50px;
-    margin-top: -60px;
+.container {
+    display: flex;
+    flex-direction: row;
 }
 
 
-.line {
-    background-color: lawngreen;
-    width: 150px;
-    height: 4px;
-    border-radius: 5px;
-    margin-top: -70px;
+.item1 {
+    flex: 50%;
 }
 
-p {
-    color: white;
-    word-wrap: break-word;
-    font-family: 'Brush Script MT', cursive;
-    font-size: 20px;
-}
-
-.next1 {
-    color: white;
-    font-size: 25px;
-    font-weight: 500;
-    font-family: 'Brush Script MT', cursive;
-    background-color: lawngreen;
-    width: 250px;
-    height: 50px;
-    text-align: center;
-    border-radius: 50px;
-    border-color: lawngreen;
-    cursor: pointer;
-    margin-bottom: 50px;
-}
-
-.next {
-    color: white;
-    font-size: 25px;
-    font-weight: 500;
-    font-family: 'Brush Script MT', cursive;
-    background-color: lawngreen;
-    width: 200px;
-    height: 50px;
-    text-align: center;
-    border-radius: 50px;
-    border-color: lawngreen;
-    cursor: pointer;
-    margin-bottom: 50px;
-}
-
-.next1:hover, .next:hover {
-    background-color: white;
-    border-color: white;
-    color: lawngreen;
-}  
-
-@media only screen and (max-width: 850px) {
-    h1 {
-        font-size: 50px;
-        margin-bottom: 70px;
-    }
-
-    .next1, .next {
-        font-size: 15px;
-        width: 150px;
-    }
+.item2 {
+    flex: 50%;
+    margin-left: 2rem;
 }
