@@ -30,6 +30,11 @@ img {
     margin-left: 2rem;
 }
 
+.item3 {
+    color: burlywood;
+    font-family: 'Cambo', serif;
+}
+
 h1 {
     font-family: 'Cambo', serif;
     font-weight: lighter;
@@ -56,15 +61,15 @@ i {
 @media only screen and (max-width: 850px) {
     .container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .item1 {
-        flex: 50%;
+        flex: 100%;
     }
 
     .item2 {
-        flex: 50%;
+        flex: 100%;
         margin-left: 2rem;
     }
     

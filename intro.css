@@ -60,19 +60,5 @@ p {
 }
 
 @media only screen and (max-width: 850px) {
-    .container {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .item1 {
-        flex: 50%;
-    }
-
-    .item2 {
-        flex: 50%;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
     
 }
