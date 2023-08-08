@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(2, 71, 42);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Calibre', sans-serif;
+    color: #fff;
+  }
