@@ -13,9 +13,13 @@ body {
     flex-direction: row;
 }
 
+.icon {
+    margin-bottom: 1rem;
+  }
 
 .item1 {
     flex: 50%;
+    margin-bottom: 1rem;
 }
 
 img {
@@ -39,6 +43,7 @@ h3 {
     padding-bottom: 2.5rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+    margin-top: 1rem;
 }
 
 h1 {
