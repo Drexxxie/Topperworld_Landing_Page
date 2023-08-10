@@ -8,21 +8,15 @@ body {
     color: #fff;
   }
 
-  .container {
+.container {
     display: flex;
     flex-direction: row;
-    margin-left: 0.5rem;
 }
 
 
-  .icon {
+.icon {
     margin-bottom: 1rem;
   }
-
-.item1 {
-    flex: 50%;
-    margin-bottom: 1rem;
-}
 
 img {
     border-radius: 1%;
@@ -32,19 +26,16 @@ img {
     flex: 50%;
 }
 
-h3 {
-    margin-left: 3.1rem;
-    margin-top: -2.8rem;
-}
-
 .box {
+    flex: 50%;
     background-color: burlywood;
     border-radius: 1rem;
     padding-top: 2rem;
     padding-bottom: 2.5rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-    margin-top: 1rem;
+    margin-left: 1rem;
+    height: fit-content;
 }
 
 h1 {
@@ -66,10 +57,6 @@ input {
     height: 2rem;
     border-radius: 0.8rem;
     border: none;
-}
-
-p {
-    font-family: 'Roboto', sans-serif;
 }
 
 .signin:hover {
