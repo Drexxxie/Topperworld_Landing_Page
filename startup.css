@@ -28,6 +28,8 @@ img {
 .item2 {
     flex: 50%;
     margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .item3 {
@@ -94,26 +96,7 @@ h1 {
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
     font-weight: bolder;
-}
-
-.navs {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact {
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-svg {
-    padding: 1rem;
-}
-
-.link {
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 @media only screen and (max-width: 850px) {
@@ -137,7 +120,7 @@ svg {
     }
 
     .list {
-        width: 100%;
+        width: auto;
     }
 
     .contact {
