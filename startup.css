@@ -109,7 +109,8 @@ svg {
 
 .link {
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
 }
 
 @media only screen and (max-width: 850px) {
