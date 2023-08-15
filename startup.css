@@ -42,26 +42,74 @@ h1 {
     font-size: 4rem;
 }
 
-button {
-    background-color: lawngreen;
-    padding: 1rem;
-    border:none;
-    border-radius: 2rem;
-    font-size: 1rem;
-    font-weight: bolder;
-    cursor: pointer;
-    margin-bottom: 2rem;
+.list {
+    border: 1px solid grey;
+    list-style: none;
+    background-color: black;
+    padding: 0px 0px 0px 0px;
+    display: none;
+    width: 100%;
 }
 
-button:hover {
+.button {
+    font-size: 16px;
+    border-bottom: 1px solid grey;
+    width: 100%;
+    padding: 10px 20px 10px 20px;
+}
+
+.button:hover {
     background-color: white;
-    color: lawngreen;
+    color: black;
     border: none;
 }
 
-i {
-    padding: 0.6rem;
-    font-size: 1.5rem;
+.list a{
+    text-decoration: none;
+}
+
+.hamburger {
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 80%;
+    margin: auto;
+    border-top: 1px solid white;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.click {
+    background-color: lawngreen;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.8rem;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+}
+
+.navs {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    padding: 2rem;
+}
+
+svg {
+    padding: 1rem;
+}
+
+.link {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 @media only screen and (max-width: 850px) {
