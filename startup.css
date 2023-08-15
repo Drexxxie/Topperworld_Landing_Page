@@ -136,6 +136,10 @@ svg {
         height: 100%;
     }
 
+    .list {
+        width: 100%;
+    }
+
     .contact {
         padding-right: 5rem;
     }
