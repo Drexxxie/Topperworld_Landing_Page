@@ -1,56 +1,270 @@
-<!-- StartUp Express Code -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./startup.css">
-    <link rel="icon" href="./2.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>StartUp Express</title>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+    />
 
-    <script>
-        function toggleFunction(){
-            var list = document.getElementById("list");
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
-            if(list.style.display == "block"){
-                list.style.display = "none";
-            }else{
-                list.style.display = "block";
-            }
-        }
-    </script>
-</head>
-<body>
-    <button class="hamburger" id="hamburger" onclick="toggleFunction()">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-    </button>
-    <ul class="list" id="list">
-        <a href="./intro.html"><li class="button">Intro</li></a>
-        <a href="./features.html"><li class="button">Features</li></a>
-        <a href="./testimonials.html"><li class="button">Testimonials</li></a>
-        <a href="./how.html"><li class="button">How It Works</li></a>
-        <a href="./price.html"><li class="button">Pricing</li></a>
-        <a href="./resources.html"><li class="button">Resources</li></a>
-        <a href="./faq.html"><li class="button">FAQ</li></a>
-    </ul>
-    <section class="container" style="margin-top: 15px;">
-        <div class="item1">
-        <img src="./betterteam.jpeg" width="100%" height="100%"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-[#122118] dark group/design-root overflow-x-hidden"
+      style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#264532] px-10 py-3">
+          <div class="flex items-center gap-4 text-white">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path></svg>
+            </div>
+            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">InnovateHub</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-white text-sm font-medium leading-normal" href="index.html">Home</a>
+              <a class="text-white text-sm font-medium leading-normal" href="program.html">Program</a>
+              <a class="text-white text-sm font-medium leading-normal" href="alumni.html">Alumni</a>
+              <a class="text-white text-sm font-medium leading-normal" href="team.html">Team</a>
+              <a class="text-white text-sm font-medium leading-normal" href="contact.html">Contact</a>
+            </div>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#39e079] text-[#122118] text-sm font-bold leading-normal tracking-[0.015em]"
+              onclick="window.location.href='apply.html'"
+            >
+              <span class="truncate">Apply Now</span>
+            </button>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div
+                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAJfbm-udsBna_ogluhF2eOJIxkX_tz1ufNRp1YxjgV_1bAXhFRJeTkSfGLDH765SHbV04jDYEX-ZFisebWDYXZ9c0k_pWvi5RdPB7scgksfdFIxZsaHeMi7axhkX-KOc4Mcuwh2JlYg_e6ldW9hQVjegNz75lVuGDDGeQebYSxz86ekkXLC5m1QUJ06Wq1RFKFkgVtKfHoketJfg5nTY4ehZrA45VbJevz59yrRgganxK1r_-c52DQehglfj7xpQiBDqKhV6NMIMTv");'
+                >
+                  <div class="flex flex-col gap-2 text-left">
+                    <h1
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                    >
+                      Accelerate Your Startup's Growth
+                    </h1>
+                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                      InnovateHub provides the resources, mentorship, and network you need to scale your business and achieve your vision.
+                    </h2>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#39e079] text-[#122118] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                    onclick="window.location.href='apply.html'"
+                  >
+                    <span class="truncate">Apply Now</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-10 px-4 py-10 @container">
+              <div class="flex flex-col gap-4">
+                <h1
+                  class="text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+                >
+                  Why Choose InnovateHub?
+                </h1>
+                <p class="text-white text-base font-normal leading-normal max-w-[720px]">
+                  We're committed to helping startups succeed. Our program is designed to provide comprehensive support and guidance.
+                </p>
+              </div>
+              <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-0">
+                <div class="flex flex-1 gap-3 rounded-lg border border-[#366347] bg-[#1b3124] p-4 flex-col">
+                  <div class="text-white" data-icon="Users" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2 class="text-white text-base font-bold leading-tight">Expert Mentorship</h2>
+                    <p class="text-[#96c5a8] text-sm font-normal leading-normal">
+                      Connect with industry leaders and experienced entrepreneurs who will guide you through every stage of your startup's journey.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-1 gap-3 rounded-lg border border-[#366347] bg-[#1b3124] p-4 flex-col">
+                  <div class="text-white" data-icon="PresentationChart" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M216,40H136V24a8,8,0,0,0-16,0V40H40A16,16,0,0,0,24,56V176a16,16,0,0,0,16,16H79.36L57.75,219a8,8,0,0,0,12.5,10l29.59-37h56.32l29.59,37a8,8,0,1,0,12.5-10l-21.61-27H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,136H40V56H216V176ZM104,120v24a8,8,0,0,1-16,0V120a8,8,0,0,1,16,0Zm32-16v40a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm32-16v56a8,8,0,0,1-16,0V88a8,8,0,0,1,16,0Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2 class="text-white text-base font-bold leading-tight">Strategic Resources</h2>
+                    <p class="text-[#96c5a8] text-sm font-normal leading-normal">
+                      Access cutting-edge tools, technologies, and funding opportunities to fuel your growth and achieve your business objectives.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-1 gap-3 rounded-lg border border-[#366347] bg-[#1b3124] p-4 flex-col">
+                  <div class="text-white" data-icon="UsersThree" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M244.8,150.4a8,8,0,0,1-11.2-1.6A51.6,51.6,0,0,0,192,128a8,8,0,0,1-7.37-4.89,8,8,0,0,1,0-6.22A8,8,0,0,1,192,112a24,24,0,1,0-23.24-30,8,8,0,1,1-15.5-4A40,40,0,1,1,219,117.51a67.94,67.94,0,0,1,27.43,21.68A8,8,0,0,1,244.8,150.4ZM190.92,212a8,8,0,1,1-13.84,8,57,57,0,0,0-98.16,0,8,8,0,1,1-13.84-8,72.06,72.06,0,0,1,33.74-29.92,48,48,0,1,1,58.36,0A72.06,72.06,0,0,1,190.92,212ZM128,176a32,32,0,1,0-32-32A32,32,0,0,0,128,176ZM72,120a8,8,0,0,0-8-8A24,24,0,1,1,87.24,82a8,8,0,1,0,15.5-4A40,40,0,1,0,37,117.51,67.94,67.94,0,0,0,9.6,139.19a8,8,0,1,0,12.8,9.61A51.6,51.6,0,0,1,64,128,8,8,0,0,0,72,120Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2 class="text-white text-base font-bold leading-tight">Vibrant Community</h2>
+                    <p class="text-[#96c5a8] text-sm font-normal leading-normal">
+                      Join a thriving network of like-minded innovators, investors, and partners who will support and inspire you along the way.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Our Program</h2>
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+              <div class="flex items-stretch p-4 gap-3">
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDn0Ix-NgiVHbU3IJu62mQk25EOTXwY4s_28pktmYiFTTELuo8CKGlvl0w6tzn1rUD8Tme-XlJ4UjVtAN898VHPYqTc5mlTo29JedDACYE8_ONXMrG2_tL7smW5qeHLi16nJYf6-vyCPoZGpoZUZejOSNCMNonVJM3n3tk3lvjwTFeEyLwP2t84cNKuJNrV5Qqj6yWUqz0iaGCBiTOOyWaSYfOzlu36We9pnB6QUw1bhE_CObI7mavbA-t3s_eRHN0tew2ukk1hjoDz");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Intensive Workshops</p>
+                    <p class="text-[#96c5a8] text-sm font-normal leading-normal">
+                      Engage in hands-on workshops covering essential startup topics, from product development to marketing and fundraising.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBDjJdyyuOTFqvnYtDGJBk7nd8ZAXOoaaZ-NqSiM99lT74TdMfulQsp_BcxStVdvYwopJirmRGx-DyEaiOTx7jo-YNPmFLKXxotD9svek2WWhm5pRZfzGCP2aGGk-7gowlAUwrdtg09JDc2dmVtvvpqaW7NA-qumwbOfVE7umgXHpg2aJtqFNerzfwRXSXdyPjJTM49ehkzhtJ1eiS9R9kLOr6fE_UNwtQvN2ct8pgWI1eTRuA6QkgSQOic3xQOqQHOYLCDXZY1HxHn");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Demo Day</p>
+                    <p class="text-[#96c5a8] text-sm font-normal leading-normal">
+                      Showcase your startup to a curated audience of investors, industry experts, and potential partners.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB1Mu77oazZAK3sQkg1j3k6MhZ9RuoPbmwywR-RggQOjUlcem7XgoyfzDg08SJpWyrVGjirExyNCDh8jaG3o5X9QCyejSy0MK0pWcSTXqk48HntWfdmnJBdO2xTtFnDHJ0WNnODgLFQul6R80U3JBDhHw_lNOC4D9H4zadPqO_b9KZsLCVjX8sUgmblUXWTMZXR8wLQZxmPSKU1rH8T84BSrMJhD22c2X7X8bseURTguCi_Fydey6Iy7-9DrjNQU3grtpJBFFYqOan5");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Ongoing Support</p>
+                    <p class="text-[#96c5a8] text-sm font-normal leading-normal">
+                      Receive continuous support and guidance even after the program concludes, ensuring long-term success.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Meet Our Mentors</h2>
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+              <div class="flex items-stretch p-4 gap-8">
+                <div class="flex h-full flex-1 flex-col gap-4 text-center rounded-lg min-w-32 pt-4">
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full flex flex-col self-center w-full"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBESFo9bnGcqKC_ThZAuN5iEMubX4Rc9Ch3HDpSksSrYiBy87FbraV7rabbzANJ-QRKOiU-rttPXcXR2_wCHRokcE_0vbyiwplWE4eliNufQ99ZBnfVG8iJFjszaDxQ_5mMa5AKHLKrT4bu6Qq94A2l9GZHFgKTKi6RLKuysuWI8vvOtUT-g2pxtlPsJYrt0vSh8kekyLOOHbOSRLPV3zAdrYVIk2scbRlHRjq-pr_ILeLxC68c7RCLQHNWjaK9388ZJjad6YoGEstM");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Ethan Carter</p>
+                    <p class="text-[#96c5a8] text-sm font-normal leading-normal">Serial Entrepreneur</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 text-center rounded-lg min-w-32 pt-4">
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full flex flex-col self-center w-full"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjeFNlkCaFqv9K9EsmEoOvYjrXDwYiTCwlvFJnjl0dmCJQvijhCbfs2-LtpBzBeJNxNg4ZE6Tims9i2gZ1I5Mw0-aSjqRp6pcRj9I3azd4W8Cp2e3AUEMbxgf6EKxN5WV5gl9EmgX3MByUvY4SkA6Fq2xijQltSLCRHtZPEGpkC8OjgFmhd1B1DrLo27RG6CBC3McZ0GUj2DK0_YgWf73YripJzTVsgAtWkw7Lt8nxym_J-HQJWUGNuLb-Hm1wjNTiT6SXBEhtQ-oy");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Olivia Bennett</p>
+                    <p class="text-[#96c5a8] text-sm font-normal leading-normal">Marketing Expert</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 text-center rounded-lg min-w-32 pt-4">
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full flex flex-col self-center w-full"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBhJqJ9Dhf3n5CJ1hBBGaJMWFA67Ud3p5mRbhOdct8-BIHYLwnEHX_ObrT4Gre1l17aikJQJmgOsTAKeKrwbV3FQkAEzT857f3NYBF6kugn32nl-XUqtMAqz3EBUMGu-PlToK0PPgfwdTW4oVETGr7vzvFuvJVNwgOu1GQU8oMepFbtd3_ZqkkMhSdTUg8NGrMJp-NwNV88ufUDUWE_hAQJOS0TJ-Nu0_6VAF10QxhfOhPelEWPRrWO2gscUJH99BZZAowXfT91rE_F");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Lucas Hayes</p>
+                    <p class="text-[#96c5a8] text-sm font-normal leading-normal">Investment Strategist</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="@container">
+              <div class="flex flex-col justify-end gap-6 px-4 py-10 @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20">
+                <div class="flex flex-col gap-2 text-center">
+                  <h1
+                    class="text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+                  >
+                    Ready to Transform Your Startup?
+                  </h1>
+                  <p class="text-white text-base font-normal leading-normal max-w-[720px">
+                    Join InnovateHub and take your business to the next level. Applications are open for a limited time.
+                  </p>
+                </div>
+                <div class="flex flex-1 justify-center">
+                  <div class="flex justify-center">
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#39e079] text-[#122118] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] grow"
+                      onclick="window.location.href='apply.html'"
+                    >
+                      <span class="truncate">Apply Now</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    <div class="item2">
-        <h1>Launch your startup 
-            <br>with "<b class="item3">Startup 
-            <br>Express</b>"</h1>
-    <a href="./launch.html"><button class="click">Launch your Startup now </button></a>
-    <div class="contact">
-        <a class="link" href="https://www.linkedin.com/in/adegbuyi-daniel-114976223/"><svg xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
-        <a class="link" href="https://twitter.com/adegbuyi_daniel"><svg xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z"/></svg></a>
-        <a class="link" href="https://wa.me/qr/XHHP2DJKSRP7G1"><svg xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224 122.8c-72.7 0-131.8 59.1-131.9 131.8 0 24.9 7 49.2 20.2 70.1l3.1 5-13.3 48.6 49.9-13.1 4.8 2.9c20.2 12 43.4 18.4 67.1 18.4h.1c72.6 0 133.3-59.1 133.3-131.8 0-35.2-15.2-68.3-40.1-93.2-25-25-58-38.7-93.2-38.7zm77.5 188.4c-3.3 9.3-19.1 17.7-26.7 18.8-12.6 1.9-22.4.9-47.5-9.9-39.7-17.2-65.7-57.2-67.7-59.8-2-2.6-16.2-21.5-16.2-41s10.2-29.1 13.9-33.1c3.6-4 7.9-5 10.6-5 2.6 0 5.3 0 7.6.1 2.4.1 5.7-.9 8.9 6.8 3.3 7.9 11.2 27.4 12.2 29.4s1.7 4.3.3 6.9c-7.6 15.2-15.7 14.6-11.6 21.6 15.3 26.3 30.6 35.4 53.9 47.1 4 2 6.3 1.7 8.6-1 2.3-2.6 9.9-11.6 12.5-15.5 2.6-4 5.3-3.3 8.9-2 3.6 1.3 23.1 10.9 27.1 12.9s6.6 3 7.6 4.6c.9 1.9.9 9.9-2.4 19.1zM400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM223.9 413.2c-26.6 0-52.7-6.7-75.8-19.3L64 416l22.5-82.2c-13.9-24-21.2-51.3-21.2-79.3C65.4 167.1 136.5 96 223.9 96c42.4 0 82.2 16.5 112.2 46.5 29.9 30 47.9 69.8 47.9 112.2 0 87.4-72.7 158.5-160.1 158.5z"/></svg></a>
-    </div> 
-     </div>   
-</section>
-</body>
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#96c5a8] text-base font-normal leading-normal min-w-40" href="index.html">Home</a>
+                <a class="text-[#96c5a8] text-base font-normal leading-normal min-w-40" href="program.html">Program</a>
+                <a class="text-[#96c5a8] text-base font-normal leading-normal min-w-40" href="alumni.html">Alumni</a>
+                <a class="text-[#96c5a8] text-base font-normal leading-normal min-w-40" href="team.html">Team</a>
+                <a class="text-[#96c5a8] text-base font-normal leading-normal min-w-40" href="contact.html">Contact</a>
+              </div>
+              <div class="flex flex-wrap justify-center gap-4">
+                <a href="#">
+                  <div class="text-[#96c5a8]" data-icon="TwitterLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="text-[#96c5a8]" data-icon="LinkedinLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <p class="text-[#96c5a8] text-base font-normal leading-normal">@2024 InnovateHub. All rights reserved.</p>
+            </footer>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>
